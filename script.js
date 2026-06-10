@@ -7,6 +7,16 @@ function getEmails() {
   let mailingList = [];
   mailingList.push(input.match(validEmail));
   console.log(mailingList);
+  for (let i = 0; i < mailingList.length; i++) {
+    //looping through the array
+    // let i= mailingList.indexOf(mailingList); thought the conditional wasn't working because i was defined as 0 in the for loop
+    if (input === mailingList[i].value) {
+      //in search of duplicate emails (unsuccessfully)
+      console.log("found a duplicate!");
+    } else {
+      console.log("new email!");
+    }
+  }
   output.innerHTML = input.match(validEmail);
   console.log("Email found!");
 }
