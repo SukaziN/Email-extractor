@@ -15,7 +15,7 @@ function getEmails() {
     //looping through the array
     // let i= mailingList.indexOf(mailingList); thought the conditional wasn't working because i was defined as 0 in the for loop
     if (input == mailingList.at(i)) {
-      //in search of duplicate emails (unsuccessfully)
+      //in search of duplicate emails (unsuccessfully) CONSIDER USING THE FILTER METHOD
       console.log("found a duplicate!");
     } else {
       console.log("new email!");
